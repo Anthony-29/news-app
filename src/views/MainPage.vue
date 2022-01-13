@@ -11,10 +11,10 @@
     <div class="row">
       <div class="col-lg-6 col-md-10 col-sm-12 col-12 h3-wrapper">
         <h3>
-          Do you want to keep up with the latest news? Well now you can! This
-          App uses <a href="https://newsapi.org">newsapi.org</a> API to find
-          news in 4 categories: Top headlines in Canada, Sports, Covid and the
-          Stock Market.
+          Do you want to keep up with the latest news? Well, now you can! This
+          app uses <a href="https://newsapi.org">newsapi.org</a> API to find
+          news in a variety of categories. The top 5 search results for each
+          category will be displayed on the screen for you to view.
         </h3>
       </div>
     </div>
@@ -52,5 +52,9 @@ export default {
 .h3-wrapper h3 {
   font-family: "Source Serif Pro", serif;
   text-align: justify;
+}
+
+a {
+  color: black;
 }
 </style>
