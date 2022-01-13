@@ -32,9 +32,7 @@
           <ul class="navbar-nav nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
               <!-- Adding the routing to the menu -->
-              <router-link class="link link--metis" to="/"
-                >Home</router-link
-              >
+              <router-link class="link link--metis" to="/">Home</router-link>
             </li>
             <li class="nav-item">
               <!-- Adding the routing to the menu -->
@@ -66,7 +64,6 @@ export default {
   name: "Nav",
 };
 </script>
-
 
 <style scoped>
 .nav-item {

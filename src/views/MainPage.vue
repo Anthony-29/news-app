@@ -1,11 +1,25 @@
 <template>
-  <Header title="Home" />
-  <p>
-    Do you want to keep up with the latest news? Well now you can, this News Api
-    App uses the API from <a href="#">NewsApi.com</a> to display the top 5
-    articles in 3 categories: Top Headlines in Canada, Sports, and Covid. The
-    articles get automatically updated every morning at 8:00am EST
-  </p>
+  <Header title="Daily News API" />
+  <div class="container">
+    <div class="row">
+      <div class="col-12 img-wrapper">
+        <img class="newspaper-img" src="../assets/newspaper.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-10 col-sm-12 col-12 h3-wrapper">
+        <h3>
+          Do you want to keep up with the latest news? Well now you can, this
+          News Api App uses the API from <a href="#">NewsApi.com</a> to display
+          the top 5 articles in 3 categories: Top Headlines in Canada, Sports,
+          and Covid. The articles get automatically updated every morning at
+          8:00am EST
+        </h3>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -15,10 +29,29 @@ import Header from "../components/Header";
 export default {
   name: "MainPage",
   data() {
-    return {};
+    return {
+      news: [],
+    };
   },
   components: {
     Header,
   },
 };
 </script>
+
+<style scoped>
+.img-wrapper {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.h3-wrapper {
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.h3-wrapper h3 {
+  font-family: "Source Serif Pro", serif;
+  text-align: justify;
+}
+</style>
