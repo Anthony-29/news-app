@@ -1,11 +1,13 @@
 <template>
-  <div class="about">
-    <h1 class="main-header">This is an about page</h1>
-  </div>
+  <Header title="Top Headlines In Canada" />
 </template>
 
 <script>
+import Header from "../components/Header";
 export default {
   name: "TopHeadlines",
+  components: {
+    Header,
+  },
 };
 </script>

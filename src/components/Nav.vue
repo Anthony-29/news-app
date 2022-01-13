@@ -24,14 +24,16 @@
             class="btn-close text-reset"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
-          >X</button>
+          >
+            X
+          </button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
               <!-- Adding the routing to the menu -->
               <router-link class="link link--metis" to="/"
-                >Main Page</router-link
+                >Home</router-link
               >
             </li>
             <li class="nav-item">
@@ -75,7 +77,6 @@ export default {
   background: #212529;
   font-weight: bold;
   text-align: center;
-
 }
 
 div.offcanvas-header {
@@ -86,6 +87,7 @@ a {
   text-decoration: none;
   font-size: 2em;
   color: black;
+  font-family: "Source Serif Pro", serif;
 }
 
 .link {
@@ -111,7 +113,7 @@ a {
 }
 
 .link--metis {
-  font-family: bely-display, sans-serif;
+  font-family: "Source Serif Pro", serif;
   text-transform: uppercase;
 }
 

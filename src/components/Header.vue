@@ -1,5 +1,6 @@
 <template>
   <h1 class="main-header">{{ title }}</h1>
+  <hr>
 </template>
 
 <script>
