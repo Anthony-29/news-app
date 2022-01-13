@@ -11,11 +11,10 @@
     <div class="row">
       <div class="col-lg-6 col-md-10 col-sm-12 col-12 h3-wrapper">
         <h3>
-          Do you want to keep up with the latest news? Well now you can, this
-          News Api App uses the API from <a href="#">NewsApi.com</a> to display
-          the top 5 articles in 3 categories: Top Headlines in Canada, Sports,
-          and Covid. The articles get automatically updated every morning at
-          8:00am EST
+          Do you want to keep up with the latest news? Well now you can! This
+          App uses <a href="https://newsapi.org">newsapi.org</a> API to find
+          news in 4 categories: Top headlines in Canada, Sports, Covid and the
+          Stock Market.
         </h3>
       </div>
     </div>

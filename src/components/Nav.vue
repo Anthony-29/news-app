@@ -42,9 +42,11 @@
             </li>
             <li class="nav-item">
               <!-- Adding the routing to the menu -->
-              <router-link class="link link--metis" to="/Sports"
-                >Sports</router-link
-              >
+              <router-link class="link link--metis" to="/NHL">NHL</router-link>
+            </li>
+            <li class="nav-item">
+              <!-- Adding the routing to the menu -->
+              <router-link class="link link--metis" to="/NFL">NFL</router-link>
             </li>
             <li class="nav-item">
               <!-- Adding the routing to the menu -->

@@ -15,8 +15,10 @@
             <p class="list-group-item-text lead">
               {{ desc }}
               <br />
-              <a :href="link" target="__blank"><small>Details&#8230;</small></a>
             </p>
+            <a class="details-link" :href="link" target="__blank"
+              ><small>Details&#8230;</small></a
+            >
           </li>
         </ul>
       </div>
@@ -59,6 +61,10 @@ export default {
 }
 
 .pull-right {
+  float: right;
+}
+
+.details-link {
   float: right;
 }
 

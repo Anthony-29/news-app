@@ -1,5 +1,5 @@
 <template>
-  <Header title="Covid News" />
+  <Header title="NHL News" />
   <DisplayNews
     v-if="news.articles"
     :img="news.articles[0].urlToImage"
@@ -42,7 +42,7 @@ import Header from "../components/Header";
 import DisplayNews from "../components/DisplayNews";
 
 export default {
-  name: "Covid",
+  name: "NHL",
   components: {
     Header,
     DisplayNews,
@@ -50,23 +50,39 @@ export default {
   data() {
     return {
       news: [],
-      link: `https://newsapi.org/v2/top-headlines?q=covid&country=ca&apiKey=${process.env.VUE_APP_API_KEY}`,
+      todaysDate: "",
+      m: "",
+      d: "",
+      y: "",
+      link: `https://newsapi.org/v2/everything?q=nhl&from=2022-01-12&sortBy=popularity&apiKey=${process.env.VUE_APP_API_KEY}`
     };
   },
   methods: {
     async fetchNews() {
-      const res = await fetch(this.link);
+      const res = await fetch(this.link)
       try {
         const data = res.json();
-        console.log(data);
         return data;
       } catch (err) {
         console.log(err);
       }
-    }
+    },
+    getCurrentDate() {
+      var today = new Date();
+      var dd = String(today.getDate() - 1).padStart(2, "0");
+      var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+      var yyyy = today.getFullYear();
+      this.y = yyyy;
+      this.m = mm;
+      this.d = dd;
+      return yyyy + "-" + mm + "-" + dd;
+    },
   },
   async created() {
     this.news = await this.fetchNews();
+    this.todaysDate = this.getCurrentDate();
+    this.link = `https://newsapi.org/v2/everything?q=nhl&from=${this.y}-${this.m}-${this.d}&sortBy=popularity&apiKey=${process.env.VUE_APP_API_KEY}`
+    console.log("yea", this.link);
   },
 };
 </script>
