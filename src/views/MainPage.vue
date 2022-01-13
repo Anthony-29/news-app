@@ -1,11 +1,15 @@
 <template>
-  <div class="home"></div>
+  <Header title="Home" />
 </template>
 
 <script>
 // @ is an alias to /src
+import Header from "../components/Header";
 
 export default {
-  name: "Home",
+  name: "MainPage",
+  components: {
+    Header,
+  },
 };
 </script>
