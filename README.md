@@ -1,9 +1,9 @@
 # news-app
 
-# What is it?
+# Description
 - This is a responsive, minimalistic news application with a variety of categories.
-- It was made in Vue3 with the help of bootstrap for styling
-
+- It was made in Vue3 with the help of bootstrap for styling.
+- The newsapi.org api will only work with the development server (localhost) due to their development plan. 
 
 ## Project setup
 ```
